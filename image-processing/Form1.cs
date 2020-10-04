@@ -33,5 +33,14 @@ namespace image_processing
             Processing.ConvertToGray(copy);
             this.picResult.Image = copy;
         }
+
+        private void btnNegative_Click(object sender, EventArgs e)
+        {
+            Bitmap copy = new Bitmap((Bitmap)this.picOriginal.Image);
+            Processing.ConvertToNegative(copy);
+            this.picResult.Image = copy;
+        }
+
+
     }
 }
