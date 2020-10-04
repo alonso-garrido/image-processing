@@ -32,5 +32,22 @@ namespace image_processing
             }
             return true;
         }
+
+        public static bool ConvertToNegative (Bitmap image)
+        {
+            for (int i = 0; i < image.Width; i++)
+            {
+                for (int j = 0; j < image.Height; j++)
+                {
+                    Color color = image.GetPixel(i, j);
+                    int r = 255 - color.R;
+                    int g = 255 - color.G;
+                    int b = 255 - color.B;
+
+                    image.SetPixel(i, j, Color.FromArgb(r, g, b));
+                }
+            }
+            return true;
+        }
     }
 }

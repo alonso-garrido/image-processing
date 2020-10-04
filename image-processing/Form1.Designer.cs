@@ -32,6 +32,8 @@
             this.picResult = new System.Windows.Forms.PictureBox();
             this.btnOpen = new System.Windows.Forms.Button();
             this.btnGray = new System.Windows.Forms.Button();
+            this.btnNegative = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picOriginal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picResult)).BeginInit();
             this.SuspendLayout();
@@ -81,12 +83,35 @@
             this.btnGray.UseVisualStyleBackColor = true;
             this.btnGray.Click += new System.EventHandler(this.btnGray_Click);
             // 
+            // btnNegative
+            // 
+            this.btnNegative.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNegative.Location = new System.Drawing.Point(431, 123);
+            this.btnNegative.Name = "btnNegative";
+            this.btnNegative.Size = new System.Drawing.Size(112, 34);
+            this.btnNegative.TabIndex = 2;
+            this.btnNegative.Text = "Negativo";
+            this.btnNegative.UseVisualStyleBackColor = true;
+            this.btnNegative.Click += new System.EventHandler(this.btnNegative_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(790, 325);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(159, 34);
+            this.btnSave.TabIndex = 3;
+            this.btnSave.Text = "Guardar Imagen";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1039, 637);
+            this.ClientSize = new System.Drawing.Size(974, 780);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnNegative);
             this.Controls.Add(this.btnGray);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.picResult);
@@ -106,6 +131,8 @@
         private System.Windows.Forms.PictureBox picResult;
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Button btnGray;
+        private System.Windows.Forms.Button btnNegative;
+        private System.Windows.Forms.Button btnSave;
     }
 }
 
